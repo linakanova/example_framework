@@ -8,12 +8,6 @@ def wait_for_element_visible(driver, locator_type, locator, timeout=30,\
                              message='Element with name {locator} not nound'):
     '''
     this function for wait element visible on the page
-    :param driver:
-    :param locator_type:
-    :param locator:
-    :param timeout:
-    :param message:
-    :return:
     '''
     try:
         return WebDriverWait(driver, timeout).until(
