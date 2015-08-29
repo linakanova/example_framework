@@ -12,7 +12,7 @@ def wait_for_element_visible(driver, locator_type, locator, timeout=30,\
     try:
         return WebDriverWait(driver, timeout).until(
 
-               EC.presence_of_element_located((locator_type, locator)))  # EC = expected condition
+               EC.presence_of_element_located((locator_type, locator))) 
     except:
         message += ' after ' + str(timeout) + ' secs. '
         assert False, message.format(locator=locator)
